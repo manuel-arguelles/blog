@@ -1,4 +1,5 @@
-#+title: All Posts
+#+HUGO_BASE_DIR: ~/Stuff/Code/blog/
+#+HUGO_SECTION: posts
 
 * Blog
 ** DONE Hello world!
