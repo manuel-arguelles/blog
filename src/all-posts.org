@@ -1,0 +1,11 @@
+#+title: All Posts
+
+* Blog
+** DONE Hello world!
+CLOSED: [2020-05-17 Sun 22:02]
+:PROPERTIES:
+:EXPORT_FILE_NAME: hello-world
+:END:
+First post! I've finally decided to return to blogging, or at least to give it a try. The idea is to document my ideas, projects and failures.
+
+I'll be using [[https://gohugo.io/][Hugo]] to generate the site and [[https://help.github.com/en/github/working-with-github-pages][GitHub's pages]] to host it.
