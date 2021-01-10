@@ -1,8 +1,7 @@
 #+HUGO_BASE_DIR: ~/Stuff/Code/blog/
 #+HUGO_SECTION: posts
 
-* Blog
-** DONE Hello world!
+* DONE Hello world!
 CLOSED: [2020-05-17 Sun 22:02]
 :PROPERTIES:
 :EXPORT_FILE_NAME: hello-world
@@ -10,3 +9,22 @@ CLOSED: [2020-05-17 Sun 22:02]
 First post! I've finally decided to return to blogging, or at least to give it a try. The idea is to document my ideas, projects and failures.
 
 I'll be using [[https://gohugo.io/][Hugo]] to generate the site and [[https://help.github.com/en/github/working-with-github-pages][GitHub's pages]] to host it.
+
+* DONE Blogging workflow                                               :blog:
+  CLOSED: [2021-01-09 Sat 18:55]
+  :PROPERTIES:
+  :EXPORT_FILE_NAME: blogging-workflow
+  :END:
+  I'm still trying to figure out the best workflow for me, for now I'm using [[https://www.gnu.org/software/emacs/][Emacs]] with [[https://orgmode.org/][Org mode]], the package that generates the Markdown from the org files is called [[https://ox-hugo.scripter.co/][ox-hugo]]. I'm using the development version of [[https://www.spacemacs.org/][Spacemacs]] and the installation was super easy. My configuration looks like this:
+  #+begin_src emacs-lisp
+  dotspacemacs-configuration-layers
+  '(
+    (org :variables
+         org-want-todo-bindings t
+         org-enable-hugo-support t)
+   )
+   #+end_src
+   
+   All the posts (blogs entries) are in one file, as recommended by ox-hugo, each entry is a todo. The reason for that is that once the status changes to done, the date is recorded. This is quite handy to date the entries once you are done writing them.
+
+   For the hosting I'm using two repositories, the output which is basically the HTML part (that's the public/ directory in the Hugo structure) and the rest in a separate repository.

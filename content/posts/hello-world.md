@@ -1,6 +1,5 @@
 +++
 title = "Hello world!"
-author = ["Manuel Argüelles"]
 date = 2020-05-17T22:02:00-05:00
 draft = false
 +++
